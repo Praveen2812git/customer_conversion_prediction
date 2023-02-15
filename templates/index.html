@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Conversion Prediction</title>
+    <link rel = "stylesheet" href = "{{url_for('static', filename = 'style.css')}}">
+</head>
+<body>
+<h1>
+    Customer Conversion Prediction
+</h1>
+
+<h3>
+    Will the call convince the customer to buy insurance?
+</h3>
+
+<form method="post" action="/predict">
+    <label><span class="label_input" id="tage">Enter the age:</span></label><br>
+    <input type="text" name="age" id="age_search" placeholder="Age" required="required" /><br><br>
+
+    <label for="jobs"><span class="label_input" id="tjob">Select the job type:</span></label><br>
+    <select name="jobs" id="drop_down">
+        <option value=8>Admin</option>
+        <option value=9>Blue Collar</option>
+        <option value=2>Entrepreneur</option>
+        <option value=1>House Maid</option>
+        <option value=11>Management</option>
+        <option value=7>Retired</option>
+        <option value=3>Self Employed</option>
+        <option value=6>Services</option>
+        <option value=5>Student</option>
+        <option value=10>Technician</option>
+        <option value=4>Unemployed</option>
+     </select><br><br>
+
+    <label for="day"><span class="label_input" id="tday">Select Day of the month:</span></label><br>
+     <select name="days" id="drop_down">
+          <option value="01">1</option>
+          <option value="02">2</option>
+          <option value="03">3</option>
+          <option value="04">4</option>
+          <option value="05">5</option>
+          <option value="06">6</option>
+          <option value="07">7</option>
+          <option value="08">8</option>
+          <option value="09">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+          <option value="24">24</option>
+          <option value="25">25</option>
+          <option value="26">26</option>
+          <option value="27">27</option>
+          <option value="28">28</option>
+          <option value="29">29</option>
+          <option value="30">30</option>
+          <option value="31">31</option>
+     </select><br><br>
+
+    <label for="month"><span class="label_input" id="tmon">Select Month:</span></label><br>
+    <select name="months" id="drop_down">
+        <option value=2>January</option>
+        <option value=7>February</option>
+        <option value=3>March</option>
+        <option value=9>April</option>
+        <option value=12>May</option>
+        <option value=8>June</option>
+        <option value=10>July</option>
+        <option value=11>August</option>
+        <option value=4>September</option>
+        <option value=5>October</option>
+        <option value=6>November</option>
+        <option value=1>December</option>
+     </select><br><br>
+
+    <label><span class="label_input" id="tdur">Duration of the call:</span></label><br>
+    <input type="text" name="duration" id="duration_search" placeholder="Duration" required="required" /><br><br>
+
+    <label><span class="label_input" id="tnoc">Number of calls:</span></label><br>
+    <input type="text" name="no_of_calls" id="nfc_search" placeholder="No. of Calls" required="required"><br><br>
+
+    <input type="submit" value="Predict" id="predict_button" ><br><br>
+
+</form>
+
+<div>
+    <h4>
+        <span class="err_mes">{{error_message}}</span><br>
+        <span class="res_mes">{{prediction_result}}</span><br>
+        <span class="res_mes">{{prediction_chance}}</span>
+    </h4>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,177 @@
+body{
+    background-color: #E3E2DF;
+    /*background-image: 'images/image1.jpg';*/
+    /*background-repeat:no-repeat;*/
+    background-size: 100%;
+}
+
+/*letter style*/
+h{
+    color: green;
+    font: "Script MT Bold";
+    margin: 20px;
+    font-size: 1em;
+}
+h1{
+    color: #E85A4F;
+    font: "Script MT Bold";
+    margin: 20px;
+    font-size: 1.8em;
+    text-align: center;
+}
+h3{
+    color: palevioletred;
+    font-size: 1.3em;
+    text-align: center;
+}
+h4{
+    text-align: center;
+}
+/*label box text*/
+.label_input{
+    color:slateblue;
+    text-align: left;
+    font-weight:bold;
+}
+/*result and error message text*/
+.res_mes{
+    color: green;
+    font-size: 1.4em;
+    margin: 10px;
+}
+.err_mes{
+    text-align: left;
+    color: red;
+    font-size: 1.2em;
+}
+
+/*input style*/
+input{
+    color: black;
+    background-color: #E3E2DF;
+    width: 200px;
+    height: 30px;
+    margin: 10px;
+    border: solid 2px darkslategray;
+    border-radius: 10px;
+    font: Georgia;
+    font-size: 1em;
+    position: absolute;
+    left: 34%;
+}
+input:focus{
+    border: solid 2px darkslategray;
+    outline: none;
+    background-color: #E3E2DF;
+}
+input:hover{
+    background-color: darkgray;
+}
+
+/*drop down style*/
+#drop_down{
+    color: black;
+    background-color: #E3E2DF;
+    width: 200px;
+    height: 35px;
+    margin: 10px;
+    border: solid 2px darkslategray;
+    border-radius: 10px;
+    font: Georgia;
+    font-size: 1em;
+    position: absolute;
+    left: 51%;
+}
+#drop_down:focus{
+    border: solid 2px darkslategray;
+    outline: none;
+    background-color: #E3E2DF;
+}
+#drop_down:hover{
+    background-color: darkgray;
+}
+
+/*predict button style*/
+#predict_button{
+    background-color: #E98074;
+    color: lightyellow;
+    width: 400px;
+    height: 35px;
+    border: none;
+    position: absolute;
+    top: 53%;
+    left: 36%;
+}
+#predict_button:hover{
+    background-color: #E85A4F;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+#predict_button:focus{
+    border: none;
+}
+
+/*positioning*/
+/*search box positioning*/
+#age_search{
+    position: absolute;
+    top: 20%;
+}
+#duration_search{
+    position: absolute;
+    top: 32%;
+}
+#nfc_search{
+    position: absolute;
+    top: 44%;
+}
+/*select box positioning*/
+select[name='jobs']{
+    position: absolute;
+    top: 20%;
+}
+select[name='days']{
+    position: absolute;
+    top: 32%;
+}
+select[name='months']{
+    position: absolute;
+    top: 44%;
+}
+/*label text positioning*/
+#tage{
+    position: absolute;
+    top: 18%;
+    left: 35%;
+}
+#tjob{
+    position: absolute;
+    top: 18%;
+    left: 52%;
+}
+#tday{
+    position: absolute;
+    top: 30%;
+    left: 52%;
+}
+#tmon{
+    position: absolute;
+    top: 42%;
+    left: 52%;
+}
+#tdur{
+    position: absolute;
+    top: 30%;
+    left: 35%;
+}
+#tnoc{
+    position: absolute;
+    top: 42%;
+    left: 35%;
+}
+
+
+
+
+
