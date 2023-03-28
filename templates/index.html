@@ -15,49 +15,61 @@
 </h3>
 
 <form method="post" action="/predict">
-    <label><span class="label_input" id="tcall_type">Enter the call type:</span></label><br>
+    <div class="call_type_class">
+    <label><span class="label_input" id="tcall_type">Call_type:</span></label><br>
     <select name="call_type" id="drop_down">
         <option value=3>Cellular</option>
         <option value=2>Telephone</option>
         <option value=1>Unknown</option>
     </select>
+    </div>
 
-    <label for="month"><span class="label_input" id="tmonth">Select the month:</span></label><br>
+    <div class="month_class">
+    <label for="month"><span class="label_input" id="tmonth">Select_the_month:</span></label><br>
     <select name="month" id="drop_down">
         <option value=3>January</option>
         <option value=7>February</option>
         <option value=12>March</option>
         <option value=8>April</option>
         <option value=1>May</option>
-        <option value=5>Jun</option>
-        <option value=2>Jul</option>
+        <option value=5>June</option>
+        <option value=2>July</option>
         <option value=6>August</option>
         <option value=10>September</option>
         <option value=9>October</option>
         <option value=4>November</option>
         <option value=11>December</option>
      </select><br><br>
+     </div>
 
-    <label for="duration"><span class="label_input" id="tduration">Duration of the call</span></label><br>
+    <div class="duration_class">
+    <label for="duration"><span class="label_input" id="tduration">Duration_of_the_call(in_sec):</span></label><br>
     <input type="text" name="duration" id="duration_search" placeholder="Duration" required="required" /><br><br>
+    </div>
 
-    <label for="prev_outcome"><span class="label_input" id="tprev_outcome">Select Prev_Outcome:</span></label><br>
-    <select name="months" id="drop_down">
+    <div class="prev_outcome_class">
+    <label for="prev_outcome"><span class="label_input" id="tprev_outcome">Select_Prev_Outcome:</span></label><br>
+    <select name="prev_outcome" id="drop_down">
         <option value=2>Failure</option>
         <option value=4>Success</option>
         <option value=3>Other</option>
         <option value=1>Unknown</option>
      </select><br><br>
+     </div>
 
-    <label><span class="label_input" id="tnum_calls">Number of calls:</span></label><br>
+    <div class="num_calls_class">
+    <label><span class="label_input" id="tnum_calls">Number_of_calls:</span></label><br>
     <input type="text" name="no_of_calls" id="nfc_search" placeholder="No. of Calls" required="required"><br><br>
+    </div>
 
-    <label><span class="label_input" id="tmarital">Marital Status:</span></label><br>
+    <div class="marital_class">
+    <label><span class="label_input" id="tmarital">Marital_Status:</span></label><br>
     <select name="marital" id="drop_down">
         <option value=2>Divorsed</option>
         <option value=1>Married</option>
         <option value=3>Single</option>
      </select><br><br>
+     </div>
 
     <input type="submit" value="Predict" id="predict_button" ><br><br>
 
@@ -66,8 +78,8 @@
 <div>
     <h4>
         <span class="err_mes">{{error_message}}</span><br>
-        <span class="res_mes">{{prediction_result}}</span><br>
-        <span class="res_mes">{{prediction_chance}}</span>
+        <span class="res_mes" id="res_mes_1">{{prediction_result}}</span><br>
+        <span class="res_mes" id="res_mes_2">{{prediction_chance}}</span>
     </h4>
 </div>
 

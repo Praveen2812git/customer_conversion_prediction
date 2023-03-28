@@ -57,7 +57,6 @@ input{
     font: Georgia;
     font-size: 1em;
     position: absolute;
-    left: 34%;
 }
 input:focus{
     border: solid 2px darkslategray;
@@ -80,7 +79,6 @@ input:hover{
     font: Georgia;
     font-size: 1em;
     position: absolute;
-    left: 51%;
 }
 #drop_down:focus{
     border: solid 2px darkslategray;
@@ -113,63 +111,38 @@ input:hover{
 }
 
 /*positioning*/
-/*search box positioning*/
-#age_search{
+/*search and select box positioning*/
+.call_type_class{
     position: absolute;
     top: 20%;
+    left: 34%;
 }
-#duration_search{
-    position: absolute;
-    top: 32%;
-}
-#nfc_search{
-    position: absolute;
-    top: 44%;
-}
-/*select box positioning*/
-select[name='jobs']{
+.month_class{
     position: absolute;
     top: 20%;
+    left: 51%;
 }
-select[name='days']{
+.duration_class{
     position: absolute;
     top: 32%;
+    left: 51%;
 }
-select[name='months']{
+.prev_outcome_class{
     position: absolute;
     top: 44%;
+    left: 51%;
 }
-/*label text positioning*/
-#tage{
+.num_calls_class{
     position: absolute;
-    top: 18%;
-    left: 35%;
+    top: 32%;
+    left: 34%;
 }
-#tjob{
+.marital_class{
     position: absolute;
-    top: 18%;
-    left: 52%;
+    top: 44%;
+    left: 34%;
 }
-#tday{
-    position: absolute;
-    top: 30%;
-    left: 52%;
-}
-#tmon{
-    position: absolute;
-    top: 42%;
-    left: 52%;
-}
-#tdur{
-    position: absolute;
-    top: 28.5%;
-    left: 35%;
-}
-#tnoc{
-    position: absolute;
-    top: 40.5%;
-    left: 35%;
-}
+
 /*res text positioning*/
 #res_mes_1{
     position: absolute;
