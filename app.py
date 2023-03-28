@@ -4,7 +4,7 @@ import pickle, numpy as np
 app = Flask(__name__)
 
 # Loading the model and scaler
-model = pickle.load(open('CCP_XGBClassication.pkl', 'rb'))
+model = pickle.load(open('CCP_DTClassification.pkl', 'rb'))
 scaler = pickle.load(open('scaler.pkl', 'rb'))
 
 # Home Page

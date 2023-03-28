@@ -24,9 +24,7 @@ h3{
     font-size: 1.3em;
     text-align: center;
 }
-h4{
-    text-align: center;
-}
+
 /*label box text*/
 .label_input{
     color:slateblue;
@@ -40,9 +38,11 @@ h4{
     margin: 10px;
 }
 .err_mes{
-    text-align: left;
     color: red;
-    font-size: 1.2em;
+    font-size: 1.4em;
+    position: absolute;
+    bottom: 25%;
+    left: 32%;
 }
 
 /*input style*/
@@ -162,16 +162,22 @@ select[name='months']{
 }
 #tdur{
     position: absolute;
-    top: 30%;
+    top: 28.5%;
     left: 35%;
 }
 #tnoc{
     position: absolute;
-    top: 42%;
+    top: 40.5%;
     left: 35%;
 }
-
-
-
-
-
+/*res text positioning*/
+#res_mes_1{
+    position: absolute;
+    bottom: 28%;
+    left: 34%;
+}
+#res_mes_2{
+    position: absolute;
+    bottom: 23%;
+    left: 28%;
+}
