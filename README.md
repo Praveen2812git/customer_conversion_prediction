@@ -1,6 +1,6 @@
 ![GitHub](https://img.shields.io/github/license/Praveen2812git/customer_conversion_prediction)
 # customer_conversion_prediction
-A Data Science [application](https://praveenpython.pythonanywhere.com/) to predict if a client will subscribe to he insurance beforehand so that they can be specifically targeted via call.<br>
+A Data Science [application](https://praveenpython.pythonanywhere.com/) to predict if a client will subscribe to the insurance beforehand so that they can be specifically targeted via call.<br>
 
 <!-- Image 1 -->
 ![alt text](https://github.com/Praveen2812git/customer_conversion_prediction/blob/main/cus_conv_pred1.jpg?raw=true)<br>
