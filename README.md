@@ -38,7 +38,7 @@ The application has been deployed in the pythonanywhere.com
 You can clone your repository to pythonanywhere or copy paste the files in pythonanywhere to run the app in cloud.
 
 ## How the model is developed
-- The dataset - train is a history of customers who accepted or rejected the insurance when called via phone.
+- The dataset - customer_details is a history of customers who accepted or rejected the insurance when called via phone.
 - The data is highly imbalanced because of a reason that only a few will accept insurance.
 - With the details of the customer provided, six features that affect acceptance percentage the most were selected.
 - Classification models (Logistic Regression, K-Nearest Neighbors, Decision Tree, Random Forest, XgBoost) are used for training.
